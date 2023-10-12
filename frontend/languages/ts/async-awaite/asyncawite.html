@@ -1,0 +1,14 @@
+<script>
+  async  function urpromiss(){
+        let yeshwantPromis=new Promise((fullfill,notfullfill)=>{
+    setTimeout(()=>{fullfill("i got fullfill")},2000)
+    
+})  
+
+
+
+console.log(await yeshwantPromis)
+return yeshwantPromis
+    }
+   console.log(urpromiss())
+</script>

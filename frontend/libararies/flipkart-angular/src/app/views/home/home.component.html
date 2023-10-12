@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col"><app-navbarcomp></app-navbarcomp></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <app-slider-comp></app-slider-comp>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col"><app-mycards img="../../../assets/2.jpg"></app-mycards></div>
+        <div class="col"><app-mycards img="../../../assets/3.jpg"></app-mycards></div>
+        <div class="col"><app-mycards img={{apidata[0]?.image}}></app-mycards></div>
+        <div class="col"><app-mycards img={{img1}}></app-mycards></div>
+    </div> -->
+    <br>
+    <div class="row" >
+
+        <div class="col" *ngFor="let image of apidata">
+           
+               
+                <app-mycards img={{image.image}}></app-mycards>
+           
+            
+        
+        </div>
+      
+    </div>
+
+</div>

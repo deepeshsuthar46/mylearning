@@ -1,0 +1,18 @@
+<script>
+
+function timer(){
+    let munite=0
+let scecond=1
+let hourse
+    setInterval(()=>{
+     if(scecond==10){
+        munite++
+        scecond=0
+     }
+    console.log(`munite:${munite}:sec:${scecond}`)
+    scecond++
+},1000)
+}
+timer()
+
+</script>

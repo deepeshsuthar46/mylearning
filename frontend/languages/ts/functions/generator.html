@@ -1,0 +1,15 @@
+<script>
+    function* icreamGiver(){
+yield "1 pice of ice"
+yield "2 pice of ice"
+yield "3 pice of ice"
+    }
+    let shashi=icreamGiver()
+    let sushil=icreamGiver()
+   
+    console.log(shashi.next())
+    console.log(shashi.next())
+    console.log(shashi.next())
+    console.log(shashi.next())
+    console.log(sushil.next())
+</script>

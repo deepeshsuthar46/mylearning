@@ -1,0 +1,8 @@
+let fs=require('fs')
+//fs.mkdirSync('jayshree')
+// fs.writeFileSync('jayshree/breakFast.txt','today jayshree had dosa  with chatni')
+// fs.appendFileSync('jayshree/breakFast.txt','for luch make chiken briyany ready')
+// let data=fs.readFileSync('jayshree/breakFast.txt','utf-8')
+// console.log(data)
+// fs.unlinkSync('jayshree/del.txt')
+fs.rmdirSync('del')

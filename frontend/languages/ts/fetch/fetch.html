@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+
+
+    <script>
+        async function apicaller(){
+         let data=fetch('https://fakestoreapi.com/products')
+         data=await (await data).json()
+           console.log(data)
+let div=   document.getElementById('root')
+
+data.map((a)=>{
+    let img=document.createElement('img')
+img.src=a.image
+img.style.width='200px'
+div.appendChild(img)
+})
+         }
+         apicaller()
+     
+    //      let normal=fetch('https://fakestoreapi.com/products')
+    //  normal.then((a)=>{return a.json()}).then((a)=>{console.log(a)})
+     
+     </script>
+</body>
+</html>

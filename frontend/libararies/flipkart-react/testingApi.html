@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="http://localhost:8003/home">
+        <input type="text" name="atmpin" id="">
+        <button>submit</button>
+    </form>
+
+
+    <script>
+async function testApi(){
+    var requestOptions = {
+  method: 'GET',
+  
+};
+
+let data=fetch("http://localhost:8003/home")
+data=await(await data).json()
+  console.log(data)
+}
+testApi()
+
+
+    </script>
+</body>
+</html>

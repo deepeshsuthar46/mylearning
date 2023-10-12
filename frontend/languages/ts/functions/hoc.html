@@ -1,0 +1,18 @@
+<script>
+let add=(a,b)=>{return a+b}
+let sub=(a,b)=>{return a-b}
+let div=(a,b)=>{return a/b}
+let mul=(a,b)=>{return a*b}
+
+
+function calculator(type){
+    if(type=="+"){
+        return add
+    }
+    if(type=="-"){
+        return sub
+    }
+}
+let opration=calculator("+")
+console.log(opration(3,7))
+</script>
